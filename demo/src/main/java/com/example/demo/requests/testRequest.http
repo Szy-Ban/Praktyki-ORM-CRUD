@@ -1,0 +1,23 @@
+### Pobierz wszystkich użytkowników
+GET http://localhost:8080/users
+
+### Dodaj nowego użytkownika
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Jan",
+  "email": "jan@example.com"
+}
+
+### Zaktualizuj użytkownika o ID 1
+PUT http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "name": "Jan Kowalski",
+  "email": "jan.kowalski@example.com"
+}
+
+### Usuń użytkownika o ID 1
+DELETE http://localhost:8080/users/1
